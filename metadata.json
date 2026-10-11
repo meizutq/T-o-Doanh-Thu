@@ -1,0 +1,6 @@
+{
+  "name": "Báo Cáo Doanh Thu Cửa Hàng",
+  "description": "Ứng dụng quản lý doanh thu chi phí cửa hàng, lập phương án vay vốn ngân hàng 12 tháng, tạo hợp đồng thương mại chiết khấu 15% và báo cáo tài chính.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

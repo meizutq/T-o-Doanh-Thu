@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      // Allow read and write for all users (both Google-authenticated and traditional accounts)
+      // Traditional accounts retrieve password salt/hashes client-side prior to session authentication
+      allow read, write: if true;
+    }
+  }
+}

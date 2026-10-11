@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile containing stores, sales records, and security logs",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "photoURL": {
+          "type": "string"
+        },
+        "lastLogin": {
+          "type": "string"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "stores": {
+          "type": "array"
+        },
+        "records": {
+          "type": "array"
+        },
+        "activeStoreId": {
+          "type": "string"
+        },
+        "securityLogs": {
+          "type": "array"
+        }
+      },
+      "required": ["email", "fullName"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Stores all information including shop databases, records, active settings, and logs for each user"
+    }
+  }
+}
